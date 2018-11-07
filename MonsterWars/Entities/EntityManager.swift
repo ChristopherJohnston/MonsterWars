@@ -131,4 +131,9 @@ class EntityManager {
         let monster = Quirk(team: team, entityManager: self)
         self.spawn(team: team, monster: monster, cost: costQuirk)
     }
+    
+    func spawnMunch(team: Team) {
+        let monster = Munch(team: team, entityManager: self)
+        self.spawn(team: team, monster: monster, cost: costMunch)
+    }
 }

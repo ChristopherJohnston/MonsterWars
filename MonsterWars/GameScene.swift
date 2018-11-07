@@ -134,6 +134,7 @@ class GameScene: SKScene {
   
   func munchPressed() {
     print("Munch pressed!")
+    entityManager.spawnMunch(team: .team1)
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

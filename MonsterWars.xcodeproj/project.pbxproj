@@ -30,6 +30,7 @@
 		352F99AB1BE95410001D1D3E /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F99AA1BE95410001D1D3E /* SoundManager.swift */; };
 		352F99B31BE97B48001D1D3E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F99B21BE97B48001D1D3E /* Constants.swift */; };
 		8344DDFB219373BC0077CC38 /* Zap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344DDFA219373BC0077CC38 /* Zap.swift */; };
+		8344DDFD219376F30077CC38 /* Munch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344DDFC219376F30077CC38 /* Munch.swift */; };
 		8388D9C0219365940048A610 /* MoveBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388D9BF219365940048A610 /* MoveBehaviour.swift */; };
 		8388D9C2219366870048A610 /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388D9C1219366870048A610 /* MoveComponent.swift */; };
 		83E6CFE02193270C000D7D07 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFDF2193270C000D7D07 /* SpriteComponent.swift */; };
@@ -66,6 +67,7 @@
 		352F99AA1BE95410001D1D3E /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		352F99B21BE97B48001D1D3E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8344DDFA219373BC0077CC38 /* Zap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zap.swift; sourceTree = "<group>"; };
+		8344DDFC219376F30077CC38 /* Munch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Munch.swift; sourceTree = "<group>"; };
 		8388D9BF219365940048A610 /* MoveBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveBehaviour.swift; sourceTree = "<group>"; };
 		8388D9C1219366870048A610 /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
 		83E6CFDF2193270C000D7D07 /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				83E6CFE421932767000D7D07 /* EntityManager.swift */,
 				83E6CFEA21933042000D7D07 /* Quirk.swift */,
 				8344DDFA219373BC0077CC38 /* Zap.swift */,
+				8344DDFC219376F30077CC38 /* Munch.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				83E6CFE521932767000D7D07 /* EntityManager.swift in Sources */,
 				83E6CFE7219328B9000D7D07 /* TeamComponent.swift in Sources */,
+				8344DDFD219376F30077CC38 /* Munch.swift in Sources */,
 				352F99AB1BE95410001D1D3E /* SoundManager.swift in Sources */,
 				352F995F1BE91323001D1D3E /* GameScene.swift in Sources */,
 				83E6CFE02193270C000D7D07 /* SpriteComponent.swift in Sources */,
