@@ -123,7 +123,8 @@ class GameScene: SKScene {
   }
   
   func quirkPressed() {
-    print("Quirk pressed!")    
+    print("Quirk pressed!")
+    entityManager.spawnQuirk(team: .team1)
   }
   
   func zapPressed() {

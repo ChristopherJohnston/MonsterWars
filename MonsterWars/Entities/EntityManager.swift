@@ -69,4 +69,33 @@ class EntityManager {
         }
         return nil
     }
+    
+    func spawnQuirk(team: Team) {
+        
+        // Find the position of the team's castle component
+        guard let teamEntity = castle(for: team),
+            let teamCastleComponent = teamEntity.component(ofType: CastleComponent.self),
+            let teamSpriteComponent = teamEntity.component(ofType: SpriteComponent.self) else {
+                return
+        }
+        
+        // Only spawn if the team has the requisite number of coins
+        if teamCastleComponent.coins < costQuirk {
+            return
+        }
+        // Take out the coins, run a spawn sound
+        teamCastleComponent.coins -= costQuirk
+        scene.run(SoundManager.sharedInstance.soundSpawn)
+        
+        // Create the Quirk entity and spawn it near the team's castle
+        let monster = Quirk(team: team)
+        if let spriteComponent = monster.component(ofType: SpriteComponent.self) {
+            spriteComponent.node.position = CGPoint(
+                x: teamSpriteComponent.node.position.x,
+                y: CGFloat.random(min: scene.size.height * 0.25, max: scene.size.height * 0.75)
+            )
+            spriteComponent.node.zPosition = 2
+        }
+        add(monster)
+    }
 }
