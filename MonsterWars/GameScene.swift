@@ -42,6 +42,8 @@ class GameScene: SKScene {
   
   // Game over detection
   var gameOver = false
+
+    var entityManager: EntityManager!
   
   override func didMove(to view: SKView) {
   
@@ -98,6 +100,26 @@ class GameScene: SKScene {
     coin2Label.verticalAlignmentMode = .center
     coin2Label.text = "10"
     self.addChild(coin2Label)
+    
+    entityManager = EntityManager(scene: self)
+    
+    let humanCastle = Castle(imageName: "castle1_atk")
+    if let spriteComponent = humanCastle.component(ofType: SpriteComponent.self) {
+        spriteComponent.node.position = CGPoint(
+            x: spriteComponent.node.size.width/2,
+            y: self.size.height/2
+        )
+    }
+    entityManager.add(humanCastle)
+    
+    let aiCastle = Castle(imageName: "castle2_atk")
+    if let spriteComponent = aiCastle.component(ofType: SpriteComponent.self) {
+        spriteComponent.node.position = CGPoint(
+            x: self.size.width - spriteComponent.node.size.width/2,
+            y: self.size.height/2
+        )
+    }
+    entityManager.add(aiCastle)
   }
   
   func quirkPressed() {
