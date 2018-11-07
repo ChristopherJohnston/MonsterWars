@@ -15,6 +15,7 @@ class Castle: GKEntity {
         let spriteComponent = SpriteComponent(texture: SKTexture(imageNamed: imageName))
         addComponent(spriteComponent)
         addComponent(TeamComponent(team: team))
+        addComponent(CastleComponent())
     }
     
     required init?(coder aDecoder: NSCoder) {

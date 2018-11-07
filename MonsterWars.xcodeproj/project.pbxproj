@@ -33,6 +33,7 @@
 		83E6CFE32193273D000D7D07 /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE22193273D000D7D07 /* Castle.swift */; };
 		83E6CFE521932767000D7D07 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE421932767000D7D07 /* EntityManager.swift */; };
 		83E6CFE7219328B9000D7D07 /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE6219328B9000D7D07 /* TeamComponent.swift */; };
+		83E6CFE921932B56000D7D07 /* CastleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE821932B56000D7D07 /* CastleComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		83E6CFE22193273D000D7D07 /* Castle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Castle.swift; sourceTree = "<group>"; };
 		83E6CFE421932767000D7D07 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		83E6CFE6219328B9000D7D07 /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
+		83E6CFE821932B56000D7D07 /* CastleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			children = (
 				83E6CFDF2193270C000D7D07 /* SpriteComponent.swift */,
 				83E6CFE6219328B9000D7D07 /* TeamComponent.swift */,
+				83E6CFE821932B56000D7D07 /* CastleComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				83E6CFE02193270C000D7D07 /* SpriteComponent.swift in Sources */,
 				352F998C1BE919C5001D1D3E /* ButtonNode.swift in Sources */,
 				352F999A1BE928AF001D1D3E /* MyUtils.swift in Sources */,
+				83E6CFE921932B56000D7D07 /* CastleComponent.swift in Sources */,
 				352F99611BE91323001D1D3E /* GameViewController.swift in Sources */,
 				83E6CFE32193273D000D7D07 /* Castle.swift in Sources */,
 				352F99B31BE97B48001D1D3E /* Constants.swift in Sources */,
