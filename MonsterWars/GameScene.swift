@@ -129,6 +129,7 @@ class GameScene: SKScene {
   
   func zapPressed() {
     print("Zap pressed!")
+    entityManager.spawnZap(team: .team1)
   }
   
   func munchPressed() {
