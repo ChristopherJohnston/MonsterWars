@@ -32,6 +32,7 @@
 		83E6CFE02193270C000D7D07 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFDF2193270C000D7D07 /* SpriteComponent.swift */; };
 		83E6CFE32193273D000D7D07 /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE22193273D000D7D07 /* Castle.swift */; };
 		83E6CFE521932767000D7D07 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE421932767000D7D07 /* EntityManager.swift */; };
+		83E6CFE7219328B9000D7D07 /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6CFE6219328B9000D7D07 /* TeamComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		83E6CFDF2193270C000D7D07 /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
 		83E6CFE22193273D000D7D07 /* Castle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Castle.swift; sourceTree = "<group>"; };
 		83E6CFE421932767000D7D07 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		83E6CFE6219328B9000D7D07 /* TeamComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				83E6CFDF2193270C000D7D07 /* SpriteComponent.swift */,
+				83E6CFE6219328B9000D7D07 /* TeamComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E6CFE521932767000D7D07 /* EntityManager.swift in Sources */,
+				83E6CFE7219328B9000D7D07 /* TeamComponent.swift in Sources */,
 				352F99AB1BE95410001D1D3E /* SoundManager.swift in Sources */,
 				352F995F1BE91323001D1D3E /* GameScene.swift in Sources */,
 				83E6CFE02193270C000D7D07 /* SpriteComponent.swift in Sources */,
