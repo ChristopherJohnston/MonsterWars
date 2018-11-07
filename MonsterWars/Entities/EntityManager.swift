@@ -72,7 +72,7 @@ class EntityManager {
     }
     
     func entities(for team: Team) -> [GKEntity] {
-        return entities.flatMap { entity in
+        return entities.compactMap { entity in
             if let teamComponent = entity.component(ofType: TeamComponent.self) {
                 if teamComponent.team == team {
                     return entity
