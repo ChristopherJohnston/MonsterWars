@@ -13,7 +13,8 @@ import GameplayKit
 class EntityManager {
     lazy var componentSystems: [GKComponentSystem] = {
         let castleSystem = GKComponentSystem(componentClass: CastleComponent.self)
-        return [castleSystem]
+        let moveSystem = GKComponentSystem(componentClass: MoveComponent.self)
+        return [castleSystem, moveSystem]
     }()
     
     var entities = Set<GKEntity>()
@@ -70,6 +71,28 @@ class EntityManager {
         return nil
     }
     
+    func entities(for team: Team) -> [GKEntity] {
+        return entities.flatMap { entity in
+            if let teamComponent = entity.component(ofType: TeamComponent.self) {
+                if teamComponent.team == team {
+                    return entity
+                }
+            }
+            return nil
+        }
+    }
+    
+    func moveComponents(for team: Team) -> [MoveComponent] {
+        let entitiesToMove = entities(for: team)
+        var moveComponents = [MoveComponent]()
+        for entity in entitiesToMove {
+            if let moveComponent = entity.component(ofType: MoveComponent.self) {
+                moveComponents.append(moveComponent)
+            }
+        }
+        return moveComponents
+    }
+    
     func spawnQuirk(team: Team) {
         
         // Find the position of the team's castle component
@@ -88,7 +111,7 @@ class EntityManager {
         scene.run(SoundManager.sharedInstance.soundSpawn)
         
         // Create the Quirk entity and spawn it near the team's castle
-        let monster = Quirk(team: team)
+        let monster = Quirk(team: team, entityManager: self)
         if let spriteComponent = monster.component(ofType: SpriteComponent.self) {
             spriteComponent.node.position = CGPoint(
                 x: teamSpriteComponent.node.position.x,
